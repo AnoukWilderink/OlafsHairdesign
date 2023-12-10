@@ -5,7 +5,7 @@
 
     <nav class="m-10 fixed top-0 left-0">
         <div class="w-full">
-            <ul class=" space-x-10 mobile:hidden tablet:hidden laptop:flex">
+            <ul class="space-x-10 flex">
                 <li>
                     <nuxt-link
                         to="/"
@@ -13,20 +13,20 @@
                         >Home
                     </nuxt-link>
                 </li>
-                <li>
+                <!-- <li>
                     <nuxt-link
                         to="/login"
                         class="text-green-light transition duration-300 ease-in-out hover:text-white"
                         >Inloggen</nuxt-link
                     >
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <nuxt-link
-                        to="/calender"
+                        to="/calendar"
                         class="text-green-light transition duration-300 ease-in-out hover:text-white"
                         >Kalender</nuxt-link
                     >
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>

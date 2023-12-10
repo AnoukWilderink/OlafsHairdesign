@@ -1,34 +1,38 @@
 <template>
-    <div class="bg-white rounded-2xl shadow-2xl mx-auto p-10">
+    <div class="mx-auto mobile:w-4/5 tablet:min-w-[300px]">
         <FormKit type="form" @submit="signInWithEmail" :actions="false">
             <FormKit
                 type="email"
-                label="E-mail"
                 name="email"
+                placeholder="voorbeeld@example.com"
                 required
             />
             <FormKit
                 type="password"
-                label="Wachtwoord"
                 name="password"
+                placeholder="******"
                 required
             />
-            <FormKit
-                type="submit"
-                label="Login"
-                required
-            />
+            <FormKit type="submit" label="Login" required />
         </FormKit>
+        <p
+            @click="$emit('toggleLoginRegister')"
+            class="cursor-closed p-small text-center hover:text-white transition duration-300 ease-in-out mt-[8px]"
+        >
+            Terug naar registreren
+        </p>
     </div>
 </template>
 
 <script setup>
+defineEmits(["toggleLoginRegister"]);
+
 const client = useSupabaseClient();
 
 const signInWithEmail = async (loginData) => {
-  const { data, error } = await client.auth.signInWithPassword({
-    email: loginData.email,
-    password: loginData.password,
-  })
-}
+    const { data, error } = await client.auth.signInWithPassword({
+        email: loginData.email,
+        password: loginData.password,
+    });
+};
 </script>

@@ -1,14 +1,11 @@
 <template>
     <div class="grid grid-cols-1 custom-grid h-[768px] laptop:h-screen">
-        <section class="flex flex-col justify-start">
+        <section class="flex flex-col justify-center">
             <img
                 alt="Olaf's Hairdesign logo"
-                class="self-center mt-32 mobile:px-10 mobile:py-20 w-full px-10"
+                class="self-center mobile:px-10 mobile:py-20 w-full px-10 max-w-[600px]"
                 src="../assets/logo_olaf.png"
             />
-            <!-- <button class="btn2 max-w-fit mx-auto mb-20 tablet:hidden">
-                Afspraak maken
-            </button> -->
         </section>
         <section
             class=" bg-white text-green grid tablet:grid-rows-[2fr,1fr] mobile:mb-40 overflow-hidden"
@@ -41,11 +38,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                 </p>
-                <UiButton @click="toggleModal" class="btn-green mt-10" label="0612345678" icon="mingcute:phone-fill" />
-                <Modal
-                    :showModal="showModal"
-                    @close-modal="showModal = false"
-                />
+                <UiButton class="btn-green mt-10" label="0612345678" icon="mingcute:phone-fill" />
             </div>
             <img
                 class="tablet:h-full w-full object-cover h-96"
@@ -60,21 +53,6 @@
     <!-- <Reviews /> -->
     <Location />
 </template>
-
-<script setup>
-const modalVisible = ref(false);
-
-const toggleModal = () => {
-    modalVisible.value = !modalVisible.value;
-}
-// export default {
-//     data() {
-//         return {
-//             showModal: false,
-//         };
-//     },
-// };
-</script>
 
 <style>
 @media (max-width: 500px) {

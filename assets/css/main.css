@@ -66,61 +66,17 @@ td {
 a {
     font-size: 20px;
     cursor: url(../cursor-closed.png), auto;
-
 }
 
-/* span {
-    font-size: 40px;
-} */
-
-/* .btn {
-    background-color: var(--color-green);
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
-    font-size: 20px;
+.cursor-closed{
     cursor: url(../cursor-closed.png), auto;
-} */
-
-/* .btn2 {
-    background-color: var(--color-green-soft) !important;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
-    font-size: 18px;
-    cursor: url(../cursor-closed.png), auto;
-    width: 100%;
-} */
+}
 
 .text-link {
     cursor: url(../cursor-closed.png), auto;
     font-size: 16px;
     /* margin-top:-10px; */
 }
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    width: 300px;
-}
-
-.form__input {
-    margin-top: 5px;
-    background-color: #e7e9ee;
-    border-radius: 10px;
-    border: none;
-    padding: 10px 24px;
-    color: black;
-    width: 100%;
-}
-
-/* .form__input::placeholder {
-    color: var(--color-green-soft);
-} */
 
 @layer components {
     .btn {
