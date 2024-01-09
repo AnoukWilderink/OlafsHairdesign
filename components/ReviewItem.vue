@@ -1,7 +1,7 @@
 <template>
     <div class="border border-green-soft p-5 flex flex-col">
         <div class="flex justify-between items-center">
-            <div class="flex gap-5 items-center">
+            <div class="tablet:flex gap-5 items-center">
                 <img
                     src="~/assets/slider1.jpeg"
                     alt=""

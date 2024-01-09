@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="flex mobile:flex-col tablet:flex-col laptop:flex-row laptop:justify-between px-10 desktop:px-40">
-            <h2 class="h2 mb-5">Locatie</h2>
+            <h2 class="h2 mb-5 ">Locatie</h2>
             
-            <a href="https://www.google.com/maps?sca_esv=578775818&output=search&q=olafs+hairdesign+hengelo&source=lnms&entry=mc&sa=X&ved=2ahUKEwiyzurtjKWCAxWcxgIHHbEVBA8Q0pQJegQIDBAB" class="flex items-center mobile:justify-start gap-3 mb-5 transition duration-300 ease-in-out mobile:font-lg hover:text-green-light "><UiIcon name="material-symbols:location-on-outline" class="tablet:text-2xl" />Twekkelerweg 125, 7553 LV Hengelo</a> 
+            <a href="https://www.google.com/maps?sca_esv=578775818&output=search&q=olafs+hairdesign+hengelo&source=lnms&entry=mc&sa=X&ved=2ahUKEwiyzurtjKWCAxWcxgIHHbEVBA8Q0pQJegQIDBAB" class="flex items-center mobile:justify-start gap-3 mb-5 transition duration-300 ease-in-out mobile:font-lg hover:text-green-light mobile:text-base"><UiIcon name="material-symbols:location-on-outline" class="tablet:text-2xl" />Twekkelerweg 125, 7553 LV Hengelo</a> 
         </div>
 
         <iframe
