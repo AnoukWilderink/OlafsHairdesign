@@ -28,7 +28,7 @@
             @click="$emit('toggleLoginRegister')"
             class="cursor-closed p-small text-center hover:text-white transition duration-300 ease-in-out mt-[8px]"
         >
-            Terug naar login
+            Of inloggen
         </p>
     </div>
 </template>

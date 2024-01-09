@@ -9,19 +9,20 @@
         <FormKit
            name="time"
            type="time"
-           label="Tijd"
+           label="Begintijd"
            required
         />
         <FormKit
             name="duration"
             type="time"
-            label="Duur"
+            label="Eindtijd"
             required
         />
         <FormKit
            name="color"
            type="color"
            label="Selecteer een kleur voor de afspraak"
+           :style="{ width: '100%', height: '40px', borderRadius: '20', border: 'none' }"
            required
         />
         <FormKit
@@ -42,6 +43,7 @@
             placeholder="Selecteer een kapper voor de afspraak"
             required
         /> 
+        
     </FormKit>
 </template>
 
@@ -68,6 +70,7 @@ const submitAppointment = async (data) => {
 
     try {
         await client.from('appointment').insert({...appointmentData})
+        location.reload()
     } catch (e) {
         console.log(e)
     }
@@ -91,3 +94,10 @@ const { data: hairdressers } = await useAsyncData('hairdresser', async () => {
     }));
 })
 </script>
+
+<style>
+
+button{
+    margin-top: 30px;
+}
+</style>

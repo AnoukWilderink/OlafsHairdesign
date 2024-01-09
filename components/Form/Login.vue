@@ -19,7 +19,7 @@
             @click="$emit('toggleLoginRegister')"
             class="cursor-closed p-small text-center hover:text-white transition duration-300 ease-in-out mt-[8px]"
         >
-            Terug naar registreren
+            Of registreren
         </p>
     </div>
 </template>
@@ -33,6 +33,9 @@ const signInWithEmail = async (loginData) => {
     const { data, error } = await client.auth.signInWithPassword({
         email: loginData.email,
         password: loginData.password,
+        options: {
+            redirectTo: "/",
+        },
     });
 };
 </script>

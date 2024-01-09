@@ -1,5 +1,5 @@
 <template>
-    <component :is="is" class="btn flex items-center justify-center gap-x-2"  @click="navigate">
+    <component :is="is" class="btn flex items-center justify-center gap-x-2"  @click="navigate" :href="props.to">
       <UiIcon v-if="icon" :name="icon" />
       {{ label }}
     </component>

@@ -1,8 +1,8 @@
 <template>
-   <section class="flex mt-32 gap-x-2 px-10">
-      <aside class="flex flex-col gap-y-4 w-1/5">
+   <section class="flex mobile:flex-col-reverse mobile:gap-y-5 mt-32 gap-x-5 px-10">
+      <aside class="flex flex-col gap-y-5 tablet:w-1/5">
          <UiCollapse title="Klant toevoegen">
-            <FormAddCustomer/>
+                <FormAddCustomer/>
          </UiCollapse>
          <UiCollapse title="Kapper toevoegen">
             <FormAddHairdresser/>
@@ -34,7 +34,7 @@
                         <CalendarAppointment v-for="(appointment, appointmentIndex) in getAppointmentsForDay(day)" :key="appointmentIndex" :appointment="appointment"/>
                      </ul>
                   </div>
-                  <UiModal class="absolute translate-y-1/4" @close="closeAppointmentModal(day)" v-if="modalStates[day]">
+                  <UiModal class="absolute translate-y-[-50px] w-[500px] overflow-hidden" @close="closeAppointmentModal(day)" v-if="modalStates[day]">
                      <template #header>
                         <header class="bg-green text-white font-bold text-2xl text-center py-5">
                            <h3>Afspraak maken</h3>

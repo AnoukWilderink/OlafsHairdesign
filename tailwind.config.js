@@ -1,4 +1,4 @@
-const FormKitVariants = require('@formkit/themes/tailwindcss')
+const FormKitVariants = require("@formkit/themes/tailwindcss");
 export default {
     content: [
         "./components/*/.{js,vue,ts}",
@@ -6,20 +6,18 @@ export default {
         "./pages/*/.vue",
         "./plugins/*/.{js,ts}",
         "./nuxt.config.{js,ts}",
-        './tailwind-theme.js',
+        "./tailwind-theme.js",
     ],
-    plugins: [
-        FormKitVariants
-    ],
+    plugins: [FormKitVariants],
     theme: {
         extend: {
             colors: {
                 green: {
-                    light: '#788082',
-                    DEFAULT: '#19292d',
-                    soft:'#273B4A',
+                    light: "#788082",
+                    DEFAULT: "#19292d",
+                    soft: "#273B4A",
                 },
-                "light-grey": "#B4C4D0", 
+                "light-grey": "#DEE6E8",
                 red: "#990000",
                 yellow: "#FECA00",
             },
@@ -36,7 +34,6 @@ export default {
                 desktop: "2536px",
                 // => @media (min-width: 1280px) { ... }
             },
-         
         },
     },
 };

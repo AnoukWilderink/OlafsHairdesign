@@ -1,6 +1,6 @@
 <template>
-    <div class="grid grid-cols-1 custom-grid h-[768px] laptop:h-screen">
-        <section class="flex flex-col justify-center">
+    <div class="grid grid-cols-1 custom-grid tablet:h-[768px] laptop:h-screen">
+        <section class="flex flex-col justify-center items-center">
             <img
                 alt="Olaf's Hairdesign logo"
                 class="self-center mobile:px-10 mobile:py-20 w-full px-10 max-w-[600px]"
@@ -16,7 +16,7 @@
                 alt="Olaf sitting in his hairsalon"
             />
             <div
-                class="flex flex-col items-start justify-start m-10 tablet:m-10"
+                class="flex flex-col items-start justify-start mobile:m-10 tablet:m-8 laptop:m-10"
             >
                 <h2 class="mb-5 h2 text-green">Over Olaf's Hairdesign</h2>
                 <p>
@@ -50,7 +50,7 @@
 
     <Tarieven />
     <ImageSlider />
-    <!-- <Reviews /> -->
+    <Reviews />
     <Location />
 </template>
 

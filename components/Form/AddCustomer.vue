@@ -1,29 +1,16 @@
 <template>
     <FormKit v-model="customerData" type="form" @submit="addCustomer">
-        <FormKit
-            name="firstName"
-            type="text"
-            label="Voornaam"
-            placeholder="Voornaam"
-            required
-        />
+        <FormKit name="firstName" type="text" placeholder="Voornaam" required />
         <FormKit
             name="lastName"
             type="text"
-            label="Achternaam"
             placeholder="Achternaam"
             required
         />
-        <FormKit
-            name="tel"
-            type="tel"
-            label="Telefoonnummer"
-            placeholder="Telefoonummer"
-        />
+        <FormKit name="tel" type="tel" placeholder="Telefoonummer" />
         <FormKit
             name="email"
             type="email"
-            label="Email"
             placeholder="Email"
             validation="required|email"
             :validation-messages="{
@@ -34,7 +21,6 @@
         <FormKit
             type="textarea"
             name="note"
-            label="Notitie"
             placeholder="Notitie over de klant."
             validation="length:0,120"
             :validation-messages="{
@@ -49,6 +35,6 @@ const client = useSupabaseClient();
 const customerData = ref(null);
 
 const addCustomer = async () => {
-    await client.from('customer').insert({...customerData.value})
-}
+    await client.from("customer").insert({ ...customerData.value });
+};
 </script>

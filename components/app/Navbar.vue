@@ -13,13 +13,17 @@
                         >Home
                     </nuxt-link>
                 </li>
-                <!-- <li>
-                    <nuxt-link
-                        to="/login"
+                <li>
+                    <UiButton />
+                </li>
+                <li>
+                    <button
+                        @click="logout"
                         class="text-green-light transition duration-300 ease-in-out hover:text-white"
-                        >Inloggen</nuxt-link
                     >
-                </li> -->
+                        Uitloggen
+                    </button>
+                </li>
                 <!-- <li>
                     <nuxt-link
                         to="/calendar"
@@ -32,4 +36,18 @@
     </nav>
 </template>
 
+<script setup>
+const client = useSupabaseClient();
 
+const logout = async () => {
+    try {
+        await client.auth.signOut({
+            options: {
+                redirectTo: "/",
+            },
+        });
+    } catch (e) {
+        console.log(e.message);
+    }
+};
+</script>

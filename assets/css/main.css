@@ -39,6 +39,12 @@ body {
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+    .h2 {
+        font-size: 24px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .h2 {
         font-size: 32px;
@@ -51,7 +57,8 @@ p,
 td {
     font-size: 16px;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1024px) {
     p,
     td {
         font-size: 18px;
@@ -68,7 +75,7 @@ a {
     cursor: url(../cursor-closed.png), auto;
 }
 
-.cursor-closed{
+.cursor-closed {
     cursor: url(../cursor-closed.png), auto;
 }
 
@@ -87,7 +94,14 @@ a {
         @apply bg-green text-white hover:bg-green-soft;
     }
 
+    .btn-green-soft {
+        @apply bg-green-soft text-white;
+    }
+
     .btn {
         cursor: url(../cursor-closed.png), auto;
     }
 }
+
+
+
