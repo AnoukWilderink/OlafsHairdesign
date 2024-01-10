@@ -14,7 +14,7 @@
                 class="btn-green mt-10 text-base"
                 label="Schrijf een review"
                 icon="material-symbols:edit-outline"
-                href="https://www.google.com/search?q=google+olafs+hairdesign&rlz=1C1UEAD_nlNL982NL982&oq=google+olafs+hairdesign&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEIMzU3MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x47b811910ce57f6d:0x24dd3d844b342d5a,1,,,,"
+                to="https://www.google.com/search?q=google+olafs+hairdesign&rlz=1C1UEAD_nlNL982NL982&oq=google+olafs+hairdesign&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEIMzU3MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x47b811910ce57f6d:0x24dd3d844b342d5a,1,,,,"
             />
         </div>
         <swiper-container

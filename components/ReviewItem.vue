@@ -1,5 +1,5 @@
 <template>
-    <div class="border border-green-soft p-5 flex flex-col">
+    <div class="border border-green-soft p-5 flex flex-col cursor-closed ">
         <div class="flex justify-between items-center">
             <div class="tablet:flex gap-5 items-center">
                 <img

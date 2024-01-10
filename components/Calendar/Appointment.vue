@@ -119,15 +119,13 @@ const formattedAppointmentDuration = computed(() => {
 const deleteAppointment = async () => {
     try {
         const { data, error } = await client
-            .from("appointment") // Adjust the table name accordingly
+            .from("appointment")
             .delete()
             .eq("appointment_id", props.appointment.appointment_id);
 
         if (error) {
             console.error("Error deleting appointment:", error);
-            // Handle error, show a message, or perform other actions as needed
         } else {
-            // Appointment deleted successfully
             console.log("Appointment deleted:", data);
             showInfo.value = false; // Close the dialog after successful deletion
             location.reload()

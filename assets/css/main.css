@@ -33,6 +33,13 @@ body {
     cursor: url(../cursor.png), auto;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .h2 {
     font-size: 28px;
     font-weight: bold;
@@ -102,6 +109,3 @@ a {
         cursor: url(../cursor-closed.png), auto;
     }
 }
-
-
-
