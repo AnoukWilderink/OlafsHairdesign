@@ -1,9 +1,8 @@
 <template>
     <section class="flex mobile:flex-col mobile:gap-y-5 mt-32 gap-x-5 px-10">
-        <table class="w-full bg-white text-green rounded-md overflow-hidden">
+        <table class="w-full bg-white text-green rounded-md overflow-hidden self-start">
             <thead>
                 <tr class="text-left bg-green-soft text-white overflow-hidden">
-                    <th class="py-2 px-4 border-b">ID</th>
                     <th class="py-2 px-4 border-b">Voornaam</th>
                     <th class="py-2 px-4 border-b">Achternaam</th>
                     <th class="py-2 px-4 border-b">Telefoon</th>
@@ -14,9 +13,6 @@
             </thead>
             <tbody>
                 <tr v-for="customer in customers" :key="customer.id">
-                    <td class="py-2 px-4 border-b rounded-bl">
-                        {{ customer.id }}
-                    </td>
                     <td class="py-2 px-4 border-b">
                         {{ customer.firstName }}
                     </td>
@@ -36,7 +32,7 @@
                         <UiIcon
                             @click="deleteCustomer(customer)"
                             name="material-symbols:delete-outline"
-                            class="icon h-6 w-6 flex text-green cursor-pointer justify-end cursor-closed hover:scale-110 transition translate ease-in-out "
+                            class="icon h-6 w-6 flex text-green cursor-pointer justify-end cursor-closed hover:scale-110 transition translate ease-in-out"
                         />
                     </td>
                 </tr>
@@ -76,10 +72,10 @@ onMounted(() => {
 const deleteCustomer = async (customer) => {
     try {
         const { data, error } = await client
-        .from("customer")
-        .delete()
-        .eq("id", customer.id);
-        
+            .from("customer")
+            .delete()
+            .eq("id", customer.id);
+
         if (error) {
             console.error("Error deleting customer:", error);
         } else {

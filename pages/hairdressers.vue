@@ -1,9 +1,8 @@
 <template>
     <section class="flex mobile:flex-col mobile:gap-y-5 mt-32 gap-x-5 px-10">
-        <table class="w-full bg-white text-green rounded-md overflow-hidden">
+        <table class="w-full bg-white text-green rounded-md overflow-hidden self-start">
             <thead>
                 <tr class="text-left bg-green-soft text-white overflow-hidden">
-                    <th class="py-2 px-4 border-b">ID</th>
                     <th class="py-2 px-4 border-b">Voornaam</th>
                     <th class="py-2 px-4 border-b">Achternaam</th>
                     <th class="py-2 px-4 border-b">Functie</th>
@@ -12,9 +11,6 @@
             </thead>
             <tbody>
                 <tr v-for="hairdresser in hairdressers" :key="hairdresser.id">
-                    <td class="py-2 px-4 border-b rounded-bl">
-                        {{ hairdresser.id }}
-                    </td>
                     <td class="py-2 px-4 border-b">
                         {{ hairdresser.firstName }}
                     </td>

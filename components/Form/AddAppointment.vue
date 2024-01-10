@@ -94,10 +94,3 @@ const { data: hairdressers } = await useAsyncData('hairdresser', async () => {
     }));
 })
 </script>
-
-<style>
-
-button{
-    margin-top: 30px;
-}
-</style>

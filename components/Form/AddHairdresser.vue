@@ -23,5 +23,6 @@ const hairdresserData = ref(null);
 
 const addHairdresser = async () => {
     await client.from("hairdresser").insert({ ...hairdresserData.value });
+    location.reload()
 };
 </script>

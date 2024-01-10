@@ -36,5 +36,6 @@ const customerData = ref(null);
 
 const addCustomer = async () => {
     await client.from("customer").insert({ ...customerData.value });
+    location.reload();
 };
 </script>

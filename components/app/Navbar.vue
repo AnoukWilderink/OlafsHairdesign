@@ -1,7 +1,7 @@
 <template>
     <nav class="m-10 fixed top-0 left-0">
         <div class="w-full">
-            <ul class="space-x-10 flex items-center">
+            <ul class="space-x-10 flex">
                 <li v-if="user">
                     <nuxt-link
                         to="/"
