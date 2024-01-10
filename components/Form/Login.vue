@@ -36,6 +36,6 @@ const signInWithEmail = async (loginData) => {
         options: {
             redirectTo: "/",
         },
-    });
+    });  
 };
 </script>

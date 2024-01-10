@@ -1,5 +1,5 @@
 <template>
-    <section class="tablet:mb-40 tablet:mt-40 mobile:mb-40">
+    <section class="mobile:mb-40">
         <h2 class="h2 mb-5 tablet:pl-10 desktop:px-40 mobile:pl-10">Zij gingen jou voor</h2>
         <swiper-container
         class="cursor-closed"

@@ -1,42 +1,58 @@
 <template>
-    <!-- <span class="tablet:hidden text-right pr-10 pt-5"
-        ><font-awesome-icon icon="fa-solid fa-bars"
-    /></span> -->
-
     <nav class="m-10 fixed top-0 left-0">
         <div class="w-full">
-            <ul class="space-x-10 flex">
-                <li>
+            <ul class="space-x-10 flex items-center">
+                <li v-if="user">
                     <nuxt-link
                         to="/"
                         class="text-green-light transition duration-300 ease-in-out hover:text-white"
                         >Home
                     </nuxt-link>
                 </li>
-                <li>
-                    <UiButton />
-                </li>
-                <li>
-                    <button
-                        @click="logout"
-                        class="text-green-light transition duration-300 ease-in-out hover:text-white"
-                    >
-                        Uitloggen
-                    </button>
-                </li>
-                <!-- <li>
+                <li v-if="user">
                     <nuxt-link
                         to="/calendar"
                         class="text-green-light transition duration-300 ease-in-out hover:text-white"
                         >Kalender</nuxt-link
                     >
-                </li> -->
+                </li>
+                <li v-if="user">
+                    <nuxt-link
+                        to="/customers"
+                        class="text-green-light transition duration-300 ease-in-out hover:text-white"
+                        >Klanten</nuxt-link
+                    >
+                </li>
+                <li v-if="user">
+                    <nuxt-link
+                        to="/hairdressers"
+                        class="text-green-light transition duration-300 ease-in-out hover:text-white"
+                        >Kappers</nuxt-link
+                    >
+                </li>
+                <li v-if="user">
+                    <UiButton
+                        @click="logout"
+                        class="btn-green-soft mt-0"
+                        label="Uitloggen"
+                        to="/"
+                    />
+                </li>
+
+                <li v-if="session">
+                    <nuxt-link
+                        to="/calendar"
+                        class="text-green-light transition duration-300 ease-in-out hover:text-white"
+                        >Kalender</nuxt-link
+                    >
+                </li>
             </ul>
         </div>
     </nav>
 </template>
 
 <script setup>
+const user = useSupabaseUser();
 const client = useSupabaseClient();
 
 const logout = async () => {
