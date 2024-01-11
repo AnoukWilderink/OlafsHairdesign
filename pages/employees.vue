@@ -31,7 +31,7 @@
             </tbody>
         </table>
         <aside class="flex flex-col gap-y-5 tablet:w-2/5">
-            <UiCollapse title="Kapper toevoegen" :collapsed="false">
+            <UiCollapse title="Medewerker toevoegen" :collapsed="false">
                 <FormAddHairdresser />
             </UiCollapse>
         </aside>

@@ -10,7 +10,7 @@
         {{ appointment.title }}
     </li>
     <dialog
-        class="rounded-2xl z-20 w-96 h-96 overflow-hidden"
+        class="rounded-2xl z-20 w-96 h-96 overflow-hidden "
         v-if="showInfo"
         open
     >
@@ -31,7 +31,7 @@
                 <p>{{ `${customer.firstName} ${customer.lastName}` }}</p>
             </div>
             <div class="flex justify-between items-center">
-                <p class="font-bold">Kapper:</p>
+                <p class="font-bold">Medewerker:</p>
                 <p>{{ `${hairdresser.firstName} ${hairdresser.lastName}` }}</p>
             </div>
             <div class="flex justify-between items-center">

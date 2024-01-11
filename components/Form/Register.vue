@@ -47,6 +47,7 @@ const signUpNewUser = async (registerData) => {
                 emailRedirectTo: "/login",
             },
         });
+        location.reload()
     } catch (error) {
         console.log(error);
     }

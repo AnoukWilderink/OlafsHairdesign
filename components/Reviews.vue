@@ -19,7 +19,7 @@
         </div>
         <swiper-container
             :loop="true"
-            class="mx-5 mobile:mt-5"
+            class="mx-5 mobile:mt-5 z-[-1]"
             :autoplay="{ delay: 1000 }"
             :speed="5000"
             :breakpoints="{

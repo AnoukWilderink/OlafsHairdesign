@@ -40,7 +40,7 @@
             type="select"
             label="Kapper"
             :options="hairdressers"
-            placeholder="Selecteer een kapper voor de afspraak"
+            placeholder="Selecteer een medewerker voor de afspraak"
             required
         /> 
         

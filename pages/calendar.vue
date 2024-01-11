@@ -76,7 +76,7 @@
             <UiCollapse title="Klant toevoegen" :collapsed="false">
                 <FormAddCustomer />
             </UiCollapse>
-            <UiCollapse title="Kapper toevoegen" :collapsed="true">
+            <UiCollapse title="Medewerker toevoegen" :collapsed="true">
                 <FormAddHairdresser />
             </UiCollapse>
         </aside>

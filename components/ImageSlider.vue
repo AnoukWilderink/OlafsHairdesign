@@ -2,10 +2,10 @@
     <section class="mobile:mb-40">
         <h2 class="h2 mb-5 tablet:pl-10 desktop:px-40 mobile:pl-10">Zij gingen jou voor</h2>
         <swiper-container
-        class="cursor-closed"
+        class="cursor-closed z-[-1]"
             :loop="true"
-            :autoplay="false"
-            :speed="5000"
+            :autoplay="true"
+            :speed="3000"
             :breakpoints="{
                 275: { slidesPerView: 1.5, spaceBetween:20 },
                 768: { slidesPerView: 3, spaceBetween:20},
