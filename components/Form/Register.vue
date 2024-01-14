@@ -47,6 +47,7 @@ const signUpNewUser = async (registerData) => {
                 emailRedirectTo: "/login",
             },
         });
+        alert("Succesvol geregistreerd. Bevestig jouw registratie in je mail voordat je in kan loggen.");
         location.reload()
     } catch (error) {
         console.log(error);

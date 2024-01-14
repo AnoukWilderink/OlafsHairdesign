@@ -33,9 +33,14 @@ const signInWithEmail = async (loginData) => {
     const { data, error } = await client.auth.signInWithPassword({
         email: loginData.email,
         password: loginData.password,
-        options: {
-            redirectTo: "/",
-        },
+        // options: {
+        //     redirectTo: "/calendar",
+        // },
     });  
+    
+    if (!error && data) {
+        window.location.href = "/calendar";
+        window.alert("Je bent succesvol ingelogd");
+    }
 };
 </script>
