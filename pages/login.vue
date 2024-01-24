@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="grid tablet:grid-cols-2 mobile:gap-10 items-center margin-auto"
-    >
+    <div class="grid tablet:grid-cols-2 mobile:gap-10 items-center margin-auto">
         <div class="flex flex-col justify-center align-start">
             <img
                 alt="Olaf's Hairdesign logo"
@@ -24,7 +22,7 @@ const register = resolveComponent("FormRegister");
 </script>
 
 <style>
-.margin-auto{
+.margin-auto {
     margin: auto 0;
 }
 </style>
